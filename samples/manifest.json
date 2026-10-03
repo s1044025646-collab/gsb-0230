@@ -1,0 +1,34 @@
+{
+  "pieceLength": 65536,
+  "single": {
+    "name": "single.bin",
+    "length": 100000,
+    "pieces": 2
+  },
+  "multi": {
+    "name": "multi-demo",
+    "totalLength": 200000,
+    "files": [
+      {
+        "path": "multi-demo/part_a.bin",
+        "length": 50000
+      },
+      {
+        "path": "multi-demo/part_b.bin",
+        "length": 50000
+      },
+      {
+        "path": "multi-demo/empty.txt",
+        "length": 0
+      },
+      {
+        "path": "multi-demo/sub/part_c.bin",
+        "length": 60000
+      },
+      {
+        "path": "multi-demo/part_d.bin",
+        "length": 40000
+      }
+    ]
+  }
+}

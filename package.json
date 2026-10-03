@@ -1,0 +1,21 @@
+{
+  "name": "bt-v1-checker",
+  "version": "1.0.0",
+  "description": "本地 BitTorrent v1 元信息解析与分片校验后端（API + CLI，离线）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && tsc -p tsconfig.scripts.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node dist/cli.js serve",
+    "samples": "node --experimental-strip-types --import ./scripts/register-ts.mjs scripts/gen-samples.ts",
+    "test": "node --experimental-strip-types --import ./scripts/register-ts.mjs --test tests/bencode.test.ts tests/integration.test.ts tests/cli-api.test.ts",
+    "demo": "node --experimental-strip-types --import ./scripts/register-ts.mjs scripts/demo.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.7.0"
+  }
+}
